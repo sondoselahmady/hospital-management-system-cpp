@@ -1,14 +1,20 @@
-# Hospital Management System
+# Hospital Triage & Queue System (C++)
 
-A C++ console application for hospital patient triage and queue management, built with modular header (`include/`) and implementation (`src/`) files.
+Priority-based patient triage system written in C++ for a Data Structures course[cite: 4, 5]. Patients are routed by severity (`Emergency`, `Critical`, `General`) and dispatched to doctors in order rather than flat first-come-first-served[cite: 6, 9].
 
-## Overview
-- Manages patient intake and severity-based prioritization (`Emergency`, `Critical`, and `General`)[cite: 6].
-- Supports viewing active queues and assigning doctors to waiting patients[cite: 6].
+## How It's Structured
+- `include/` — Class and template declarations (`Patient.h`, `Node.h`, `Queue.h`, `HospitalSystem.h`)[cite: 4]
+- `src/` — Implementations and entry point (`Patient.cpp`, `Node.cpp`, `Queue.cpp`, `HospitalSystem.cpp`, `main.cpp`)[cite: 4]
+- `DS Project.sln` — Visual Studio solution[cite: 9]
 
-## Repository Layout
-```text
-├── include/        # Header files (.h)
-├── src/            # Source files (.cpp)
-├── .gitignore      # Ignored build and cache files
-└── DS Project.sln  # Visual Studio solution
+## What It Does
+- Logs incoming patients with a triage level (`Emergency`, `Critical`, `General`)[cite: 9]
+- Tracks waiting patients across priority queues[cite: 9]
+- Pulls the next highest-priority patient when a doctor becomes available[cite: 9]
+
+## Running It
+Open `DS Project.sln` in Visual Studio and run, or build directly from the command line:
+
+```bash
+g++ -std=c++17 -Iinclude src/*.cpp -o hospital_system
+./hospital_system
