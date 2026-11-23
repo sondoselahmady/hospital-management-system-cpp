@@ -1,16 +1,14 @@
 # Hospital Management System
 
-A C++ console application managing patient triage across priority levels (Emergency, Critical, and General) using custom templated linked-list queues (Node<T> and Queue<T>).
+A C++ console application for hospital patient triage and queue management, built with modular header (`include/`) and implementation (`src/`) files.
 
-## Project Structure
-- src/ � Implementation files (main.cpp, HospitalSystem.cpp, Node.cpp, Patient.cpp, Queue.cpp)
-- include/ � Header files (HospitalSystem.h, Node.h, Patient.h, Queue.h)
-- DS Project.sln � Visual Studio solution file
+## Overview
+- Manages patient intake and severity-based prioritization (`Emergency`, `Critical`, and `General`)[cite: 6].
+- Supports viewing active queues and assigning doctors to waiting patients[cite: 6].
 
-## Features
-- Add patients with severity priority (General, Critical, Emergency)
-- View active patient queues by priority tier
-- Assign doctors to the highest-priority waiting patient
-
-## Built With
-- C++ / Visual Studio
+## Repository Layout
+```text
+├── include/        # Header files (.h)
+├── src/            # Source files (.cpp)
+├── .gitignore      # Ignored build and cache files
+└── DS Project.sln  # Visual Studio solution
