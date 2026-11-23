@@ -1,4 +1,4 @@
-#include "Patient.h"
+#include "../include/Patient.h"
 #include <iostream>
 using namespace std;
 

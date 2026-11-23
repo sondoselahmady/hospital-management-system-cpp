@@ -1,4 +1,4 @@
-#include "HospitalSystem.h"
+#include "../include/HospitalSystem.h"
 #include <iostream>
 
 using namespace std;
