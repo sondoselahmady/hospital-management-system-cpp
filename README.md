@@ -16,5 +16,11 @@ Priority-based patient triage system written in C++ for a Data Structures course
 Open `DS Project.sln` in Visual Studio and run, or build directly from the command line:
 
 ```bash
-g++ -std=c++17 -include src/*.cpp -o hospital_system
+g++ -std=c++17 src/*.cpp -o hospital_system
 ./hospital_system
+```
+
+## What I Learned
+
+- Implementing priority queues from scratch with linked lists
+- Separating declarations (include/) from implementations (src/) in a multi-file C++ project
